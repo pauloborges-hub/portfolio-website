@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+biome.json
 
 # debug
 npm-debug.log*
