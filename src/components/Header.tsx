@@ -11,7 +11,7 @@ function Header() {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Paul<span className="text-[#00ff99]">.</span>
+            Paulo<span className="text-[#00ff99]">.</span>dev
           </h1>
         </Link>
         {/* Desktop nav & hire me button*/}

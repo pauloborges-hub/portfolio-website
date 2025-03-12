@@ -19,7 +19,7 @@ function MobileNav() {
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
-              Paul<span className="text-[#00ff99]">.</span>
+              Paulo<span className="text-[#00ff99]">.</span>dev
             </h1>
           </Link>
         </div>
