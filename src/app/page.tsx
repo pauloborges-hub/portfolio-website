@@ -35,7 +35,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center gap-2 hover:cursor-pointer"
+                  className="uppercase flex items-center gap-2 hover:cursor-pointer transition-all duration-500"
                 >
                   <span>Download CV</span>
                   <FiDownload />

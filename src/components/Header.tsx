@@ -15,10 +15,12 @@ function Header() {
           </h1>
         </Link>
         {/* Desktop nav & hire me button*/}
-        <div className="hidden xl:flex">
+        <div className="hidden xl:flex gap-12">
           <Nav />
           <Link href="/contact">
-            <Button>Hire me</Button>
+            <Button className="hover:cursor-pointer hover:text-[#00ff99] hover:bg-[#1c1c22] transition-all duration-500">
+              Hire me
+            </Button>
           </Link>
         </div>
         {/* Mobile nav */}
