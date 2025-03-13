@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 
+import type { Swiper as SwiperType } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
@@ -53,13 +54,34 @@ const projects = [
     live: '',
     github: '',
   },
+  {
+    num: '04',
+    category: 'frontend',
+    title: 'project 1',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eligendi tenetur nemo rerum consequatur.',
+    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+    image: '/assets/work/thumb4.png',
+    live: '',
+    github: '',
+  },
+  {
+    num: '05',
+    category: 'frontend',
+    title: 'project 1',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eligendi tenetur nemo rerum consequatur.',
+    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+    image: '/assets/work/thumb5.png',
+    live: '',
+    github: '',
+  },
 ]
 
 function WorkPage() {
   const [project, setProject] = useState(projects[0])
 
-  // @ts-ignore
-  function handleSlideChange(swiper) {
+  function handleSlideChange(swiper: SwiperType) {
     // get current slide index
     const currentIndex = swiper.activeIndex
 
@@ -150,7 +172,7 @@ function WorkPage() {
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
 
                     {/* image */}
                     <div className="relative w-full h-full">

@@ -15,23 +15,32 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
-              Hello I{"'"}m <br />{' '}
+              Hello, I{"'"}m <br />{' '}
               <span className="text-[#00ff99]">Paulo Borges</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences, I am proeficient
-              in various programming languages and technologies.
+              Software developer with over 1 year of experience creating custom
+              web applications on demand for various industries. I work
+              throughout the entire development cycle, from designing responsive
+              interfaces tailored to client needs to implementation and
+              deployment, ensuring functional and efficient solutions.
             </p>
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <a
+                // href="https://drive.google.com/file/d/11BNjS4Ufa0kwrn09Abo6Dy_p8yJ-I1tx/view?usp=sharing"
+                href="https://drive.google.com/uc?export=download&id=11BNjS4Ufa0kwrn09Abo6Dy_p8yJ-I1tx"
+                download="sample.pdf"
               >
-                <span>Download CV</span>
-                <FiDownload />
-              </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2 hover:cursor-pointer"
+                >
+                  <span>Download CV</span>
+                  <FiDownload />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"

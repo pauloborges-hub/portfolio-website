@@ -9,28 +9,28 @@ const services = [
     num: '01',
     title: 'Web Development',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates culpa repellat modi earum animi nisi aut?',
+      'I specialize in building high-quality custom websites and applications tailored to your business needs. From bespoke web applications to fully functional e-commerce platforms, I can ensure you a seamless user experience with modern, scalable, and secure solutions.',
     href: '',
   },
   {
     num: '02',
-    title: 'UI/UX Design',
+    title: 'AI-Powered Apps',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates culpa repellat modi earum animi nisi aut?',
+      'Supercharge your web applications with cutting-edge AI and automation. From smart chatbots that enhance customer interactions to predictive analytics that drive better decision-making, I can integrate next-gen AI features to make your apps more intelligent, efficient, and responsive.',
     href: '',
   },
   {
     num: '03',
-    title: 'Logo Design',
+    title: 'SaaS Apps & E-Commerce',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates culpa repellat modi earum animi nisi aut?',
+      'Empower your business with high-performance SaaS applications and dynamic e-commerce platforms. Whether you are launching a subscription-based service or an online store, I can build scalable, secure, and feature-rich solutions designed for seamless user experiences and long-term success.',
     href: '',
   },
   {
     num: '04',
-    title: 'SEO',
+    title: 'SEO & Performance',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates culpa repellat modi earum animi nisi aut?',
+      'Maximize your online presence with SEO-driven strategies and high-performance optimization. I will ensure your website is fast, search engine-friendly, and built for conversions, helping you rank higher and deliver a seamless user experience.',
     href: '',
   },
 ]

@@ -1,11 +1,17 @@
 import Link from 'next/link'
-import { FaGithub, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 
 const socials = [
-  { icon: <FaGithub />, path: '' },
-  { icon: <FaLinkedinIn />, path: '' },
-  { icon: <FaYoutube />, path: '' },
-  { icon: <FaTwitter />, path: '' },
+  { icon: <FaGithub />, path: 'https://github.com/pauloborges-hub' },
+  {
+    icon: <FaLinkedinIn />,
+    path: 'https://www.linkedin.com/in/paulo-victor-borges/',
+  },
+  {
+    icon: <FaYoutube />,
+    path: 'https://www.youtube.com/channel/UCzy8z3fHeMQdo3r6MH16ODg',
+  },
+  { icon: <FaInstagram />, path: 'https://www.instagram.com/paulovicborges/' },
 ]
 
 interface SocialProps {

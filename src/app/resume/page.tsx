@@ -18,11 +18,12 @@ import {
   FaReact,
 } from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+
 // about data
 const about = {
   title: 'About me',
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quisquam odio nihil eveniet nobis minima neque hic.',
+    'My name is Paulo Borges, and I am the CEO of Fusion Web Solutions. I am also very excited to be launching a groundbreaking SaaS application called Smart PDF, which lets users chat with any PDF they upload to the web app. I strongly believe this venture has immense potential and will be highly successful in the future. Our goal is to fully integrate Smart PDF with a variety of services, including image-to-text and OCR technologies, all powered by AI, to enhance functionality and provide cutting-edge solutions.',
   info: [
     {
       fieldName: 'Name',
@@ -52,7 +53,7 @@ const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quasi minima fugiat distinctio officiis molestiae cum mollitia.',
+    'As a software developer, I specialize in analyzing and refining project functionalities, ensuring client needs align with the best technical solutions. I develop high-performance web applications using HTML, CSS, JavaScript, React, and Next.js, focusing on scalability and seamless user experiences.',
   items: [
     {
       company: 'Fusion Web Solutions',
@@ -65,13 +66,13 @@ const experience = {
       duration: '2024',
     },
     {
-      company: 'GB Gesso Company',
+      company: 'GB Gesso Plaster Company',
       position: 'Freelance Developer',
       duration: '2024',
     },
     {
       company: 'Smart PDF SaaS App',
-      position: 'Freelance Developer',
+      position: 'Full Stack Developer',
       duration: '2025 - Present',
     },
   ],
@@ -96,11 +97,11 @@ const education = {
     },
     {
       institution: 'UniCesumar',
-      degree: 'Systems Analysis and Development Technologist',
+      degree: 'Systems Analysis and Development',
       duration: '2024 - Present',
     },
     {
-      institution: 'MAB Idiomas',
+      institution: 'MAB Idiomas English School',
       degree: 'English Course',
       duration: '2014 - 2018',
     },
@@ -111,7 +112,7 @@ const education = {
 const skills = {
   title: 'My skills',
   description:
-    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et atque quidem earum modi qui laborum ad vitae incidunt quaerat doloremque voluptates veniam adipisci amet illum cum placeat, temporibus dolor. Nisi?',
+    'I specialize in front-end technologies like HTML, CSS, JavaScript, React, and Next.js, and back-end solutions like Firebase NoSQL, PostgreSQL and Redis. I am skilled in Git, SEO, domain registration, and site deployment for optimal performance. With UI/UX expertise, I use TailwindCSS for responsive, functional designs. I have worked with Cloudflare Workers, Clerk, and Liveblocks to build scalable, serverless solutions and integrate third-party services to create seamless, user-focused applications.',
   skillList: [
     {
       icon: <FaHtml5 />,

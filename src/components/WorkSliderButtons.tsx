@@ -6,13 +6,13 @@ import { useSwiper } from 'swiper/react'
 interface WorkSliderButtonsProps {
   containerStyles: string
   buttonStyles: string
-  iconsStyles: string
+  // iconsStyles: string
 }
 
 function WorkSliderButtons({
   containerStyles,
   buttonStyles,
-  iconsStyles,
+  // iconsStyles,
 }: WorkSliderButtonsProps) {
   const swiper = useSwiper()
 
@@ -23,14 +23,14 @@ function WorkSliderButtons({
         type="button"
         onClick={() => swiper.slidePrev()}
       >
-        <PiCaretLeftBold className={iconsStyles} />
+        <PiCaretLeftBold />
       </button>
       <button
         className={buttonStyles}
         type="button"
         onClick={() => swiper.slideNext()}
       >
-        <PiCaretRightBold className={iconsStyles} />
+        <PiCaretRightBold />
       </button>
     </div>
   )
