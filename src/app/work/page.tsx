@@ -7,7 +7,7 @@ import type { Swiper as SwiperType } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
-import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
+import { BsGithub, BsPlayCircle } from 'react-icons/bs'
 
 import {
   Tooltip,
@@ -23,57 +23,61 @@ import Link from 'next/link'
 const projects = [
   {
     num: '01',
-    category: 'frontend',
+    category: 'front-end',
     title: 'project 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eligendi tenetur nemo rerum consequatur.',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+      'Fusion Web Solutions website, built with Next.js and Tailwind CSS, leveraging the best SEO practices. It utilizes Next.js features like Server-Side Rendering (SSR) to maximize performance and minimize client-side JavaScript, ensuring a fast, efficient, and optimized user experience. Additionally, TypeScript is used throughout the entire application to enhance code stability and provide strong type protection.',
+    stack: [
+      { name: 'Next.js' },
+      { name: 'Tailwind CSS' },
+      { name: 'Typescript' },
+    ],
     image: '/assets/work/thumb1.png',
-    live: '',
+    live: 'https://fusionweb.dev.br/',
     github: '',
   },
   {
     num: '02',
-    category: 'frontend',
+    category: 'full-stack',
     title: 'project 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eligendi tenetur nemo rerum consequatur.',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+      'Smart PDF is a powerful SaaS application that enables intelligent chat interactions with PDF documents. Users can upload PDFs, query their content through an AI-driven chat interface, and receive precise, contextualized responses. The platform offers secure authentication, dynamic content processing, seamless payment integration, and a responsive, accessibility-focused design to enhance the user experience.',
+    stack: [{ name: 'Next.js' }, { name: 'Firebase' }, { name: 'LangChain' }],
     image: '/assets/work/thumb2.png',
-    live: '',
+    live: 'https://chat-to-pdf-ochre.vercel.app/',
     github: '',
   },
   {
     num: '03',
-    category: 'frontend',
+    category: 'front-end',
     title: 'project 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eligendi tenetur nemo rerum consequatur.',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+      'Fusion Web Solutions website, built with Next.js and Tailwind CSS, leveraging the best SEO practices. It utilizes Next.js features like Server-Side Rendering (SSR) to maximize performance and minimize client-side JavaScript, ensuring a fast, efficient, and optimized user experience. Additionally, TypeScript is used throughout the entire application to enhance code stability and provide strong type protection.',
+    stack: [{ name: 'React' }, { name: 'CSS' }, { name: 'Javascript' }],
     image: '/assets/work/thumb3.png',
-    live: '',
+    live: 'https://gbgesso.com.br/',
     github: '',
   },
   {
     num: '04',
-    category: 'frontend',
+    category: 'full-stack',
     title: 'project 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eligendi tenetur nemo rerum consequatur.',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+      'A full-featured e-commerce application using Next.js, TypeScript, Sanity (headless CMS), Clerk (authentication), Stripe (payment processing), Zustand (state management), and Tailwind CSS (styling). The project includes robust e-commerce features such as secure sign-up and login, a dynamic shopping cart, seamless payment integration, CMS-powered product management, and afully responsive design focused on accessibility and user experience.',
+    stack: [{ name: 'Next.js' }, { name: 'Sanity' }, { name: 'Typescript' }],
     image: '/assets/work/thumb4.png',
-    live: '',
+    live: 'https://ecommerce-sanity-six-zeta.vercel.app/',
     github: '',
   },
   {
     num: '05',
-    category: 'frontend',
+    category: 'front-end',
     title: 'project 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eligendi tenetur nemo rerum consequatur.',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+      'A six-page website for MG-Tek Gráfica, featuring interactive carousels and a fully responsive design optimized for mobile devices. The project emphasizes usability and performance, delivering an intuitive user experience. Future plans include expanding the application into a full-stack e-commerce platform to enhance features and customer interaction.',
+    stack: [{ name: 'React' }, { name: 'CSS' }, { name: 'Javascript' }],
     image: '/assets/work/thumb5.png',
-    live: '',
+    live: 'https://mgtekgrafica.com.br/',
     github: '',
   },
 ]
@@ -135,8 +139,8 @@ function WorkPage() {
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-[#00ff99]" />
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:cursor-pointer">
+                        <BsPlayCircle className="text-white text-3xl group-hover:text-[#00ff99]" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live project</p>
@@ -146,7 +150,7 @@ function WorkPage() {
                 </Link>
 
                 {/* github project button */}
-                <Link href={project.github}>
+                {/* <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -157,7 +161,7 @@ function WorkPage() {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -169,19 +173,20 @@ function WorkPage() {
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => (
-                <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                    {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
+                <SwiperSlide key={index} className="w-full h-[460px]">
+                  <div className="h-[460px] relative group flex justify-center items-center">
+                    {/* Overlay */}
+                    <div className="absolute inset-0 z-10" />
 
-                    {/* image */}
+                    {/* Image Container */}
                     <div className="relative w-full h-full">
                       <Image
                         src={project.image}
                         fill
                         className="object-cover"
-                        alt=""
+                        alt="Project Image"
                         quality={100}
+                        style={{ objectFit: 'cover' }}
                       />
                     </div>
                   </div>
@@ -191,7 +196,7 @@ function WorkPage() {
               {/* slider buttons */}
               <WorkSliderButtons
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                buttonStyles="bg-[#00ff99] hover:bg-[#00ff99]-hover text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                buttonStyles="bg-[#00ff99] hover:bg-[#00ff99]-hover text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all hover:cursor-pointer"
               />
             </Swiper>
           </div>

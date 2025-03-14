@@ -17,8 +17,8 @@ function Header() {
         {/* Desktop nav & hire me button*/}
         <div className="hidden xl:flex gap-12">
           <Nav />
-          <Link href="/contact">
-            <Button className="hover:cursor-pointer hover:text-[#00ff99] hover:bg-[#1c1c22] transition-all duration-500">
+          <Link href="mailto:dev.pauloborges@gmail.com">
+            <Button className="hover:cursor-pointer hover:text-[#00ff99] hover:bg-[#1c1c22] transition-all duration-400">
               Hire me
             </Button>
           </Link>
